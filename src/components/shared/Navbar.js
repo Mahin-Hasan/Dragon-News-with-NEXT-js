@@ -25,7 +25,7 @@ const navItems = [
   },
   {
     route: "Category",
-    pathname: "/categories/news?category=all-news",
+    pathname: "/categories/news?category=all-news", // triggers [categoriesId] which is a dynamic route and set initial search Params
   },
   {
     route: "News",
