@@ -27,7 +27,8 @@ const DynamicNewsPage = async ({ params, searchParams }) => { //searchParams aft
       >
         {data.map((news) => (
           <Grid key={news.id} item xs={6}>
-            <Link href={`/${news.category.toLowerCase()}/${news._id}`}>
+            {/* below code to trigger dynamic [news][newsId] */}
+            <Link href={`/${news.category.toLowerCase()}/${news._id}`}> 
               <Card>
                 <CardActionArea>
                   <CardMedia
