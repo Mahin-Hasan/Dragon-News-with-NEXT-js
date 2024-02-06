@@ -15,7 +15,7 @@ import {
   
   const LatestNews = async () => {
     const { data } = await getAllNews();
-    console.log(data[0]);
+    console.log(data[0]); //to show first index data
     return (
       <Box className="my-5">
         <Card>
